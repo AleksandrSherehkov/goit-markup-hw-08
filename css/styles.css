@@ -56,10 +56,10 @@ body {
 .address-title {
   color: #ffffff;
 }
-.connection .link {
+.address .link {
   color: rgba(255, 255, 255, 0.6);
 }
-.connection .link:hover,
-.connection .link:focus {
+.address .link:hover,
+.address .link:focus {
   color: #2196f3;
 }
