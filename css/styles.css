@@ -33,14 +33,15 @@ body {
 }
 .contact .link:hover,
 .contact .link:focus {
-  color: #2196f3;contact
+  color: #2196f3;
 }
 
 /* герой */
+.hero {
+  background: #2f303a;
+}
 .hero-title {
   color: #ffffff;
-  /* потом заменится на фон рис*/
-  background-color: #2f303a;
 }
 
 /* секции */
