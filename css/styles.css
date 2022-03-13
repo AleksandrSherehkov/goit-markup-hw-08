@@ -5,6 +5,9 @@ body {
 .list {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 /* основной текс #757575 */
 /* втоичный цвет текста #212121 */
