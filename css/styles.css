@@ -48,3 +48,18 @@ body {
 .section-title {
   color: #212121;
 }
+
+/* подвал */
+.footer {
+  background: #2f303a;
+}
+.address-title {
+  color: #ffffff;
+}
+.connection .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.connection .link:hover,
+.connection .link:focus {
+  color: #2196f3;
+}
