@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--third-text-color);
   color: var(--primary-text-color);
 }
 .list {
@@ -70,7 +70,7 @@ a {
   background: #2f303a;
 }
 .address-title {
-  color: #ffffff;
+  color: var(--third-text-color);
 }
 .address .link {
   color: var(--address-link-color);
