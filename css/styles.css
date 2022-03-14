@@ -6,7 +6,8 @@
   --address-link-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
   --bg-filter-button: #f5f4fa;
-}
+  --bg-card: #eeeeee;
+
 
 body {
   background-color: #ffffff;
@@ -78,7 +79,7 @@ a {
 .address .link:focus {
   color: var(--accent-color);
 }
-/* портфоли */
+/* фильтр портфоли */
 
 .filter {
   color: var(--title-text-color);
@@ -90,6 +91,10 @@ a {
   background: var(--accent-color);
 }
 
+/* Портфолио работ */
+.bgr_card {
+  background-color: var(--bg-card);
+}
 .section-par {
   color: var(--primary-text-color);
 }
