@@ -1,8 +1,3 @@
-/* основной текс #757575 */
-/* втоичный цвет текста #212121 */
-/* цвет лого и акцент #2196F3 #000000 */
-/* цвет почти и теефона футора  rgba(255, 255, 255, 0.6) */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -10,6 +5,7 @@
   --accent-color: #2196f3;
   --address-link-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --bg-filter-button: #f5f4fa;
 }
 
 body {
@@ -60,6 +56,7 @@ a {
 }
 .hero-button {
   color: var(--third-text-color);
+  background: var(--accent-color);
 }
 
 /* секции */
@@ -85,7 +82,14 @@ a {
 
 .filter {
   color: var(--title-text-color);
+  background: var(--bg-filter-button);
 }
+.filter:hover,
+.filter:focus {
+  color: var(--third-text-color);
+  background: var(--accent-color);
+}
+
 .section-par {
   color: var(--primary-text-color);
 }
