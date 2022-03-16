@@ -66,6 +66,7 @@ a {
 /* contact */
 .contact .link {
   color: var(--primary-text-color);
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -182,7 +183,7 @@ a {
 .portfolio-par {
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.88;
 }
 /* footer */
 .logo-white {
@@ -193,6 +194,7 @@ a {
 }
 .address-title {
   color: var(--third-text-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -202,6 +204,7 @@ a {
 }
 .address .link {
   color: var(--address-link-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
