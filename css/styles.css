@@ -19,7 +19,16 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  outline: 2px solid tomato;
+}
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 a {
@@ -80,8 +89,12 @@ a {
 /* hero */
 .hero {
   background: #2f303a;
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
   color: var(--third-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -92,8 +105,15 @@ a {
 }
 
 .hero-button {
+  padding: 10px 32px;
+  /* width: 200px;
+  height: 50px; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: var(--third-text-color);
   background: var(--accent-color);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
