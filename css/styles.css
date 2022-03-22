@@ -10,7 +10,6 @@
   --logo-color: #000000;
 
   --bg-filter-button: #f5f4fa;
-  --bg-card: #eeeeee;
 }
 /* утилиты */
 
@@ -140,7 +139,17 @@ header {
 
 /* hero */
 .hero {
-  background: #2f303a;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/bghero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   text-align: center;
 }
 .hero-title {
@@ -279,6 +288,7 @@ header {
   color: var(--title-text-color);
   background: var(--bg-filter-button);
   border: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -289,6 +299,8 @@ header {
 .portfolio .filter:focus {
   color: var(--third-text-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* project examplesт */
@@ -300,18 +312,17 @@ header {
   width: calc ((100%-60px) / 3);
   border-bottom: 1px solid #eeeeee;
 }
-/* .portfolio-card {
-  width: 370px;
-} */
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .portfolio-card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.bgr_card {
-  background-color: var(--bg-card);
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio-link {
   display: block;
 }
