@@ -139,10 +139,13 @@ header {
 
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
+
   background: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bghero.jpg);
@@ -153,9 +156,7 @@ header {
   text-align: center;
 }
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
-
   color: var(--third-text-color);
   font-weight: 900;
   font-size: 44px;
