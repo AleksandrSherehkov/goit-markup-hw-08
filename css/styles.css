@@ -257,6 +257,9 @@ header {
   text-align: center;
 }
 /* activity */
+.activity.section {
+  padding-top: 0px;
+}
 .activity-list {
   display: flex;
   justify-content: space-around;
