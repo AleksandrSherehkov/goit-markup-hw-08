@@ -19,6 +19,9 @@
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 .cursor {
   cursor: pointer;
 }
@@ -287,8 +290,12 @@ header {
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -298,8 +305,7 @@ header {
   text-align: center;
 }
 .team-position {
-  margin-bottom: 30px;
-
+ 
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -345,7 +351,7 @@ header {
 }
 .portfolio-card {
   width: calc ((100%-60px) / 3);
-  border-bottom: 1px solid #eeeeee;
+  
 }
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -357,15 +363,22 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+
+}
 .portfolio-link {
   display: block;
 }
 .portfolio-title {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-
+ 
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -373,10 +386,7 @@ header {
 }
 .portfolio-par {
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-  margin-right: 24px;
-
+  
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -390,9 +400,11 @@ header {
   padding-bottom: 60px;
   background: #2f303a;
 }
-.address-title {
+.address-list {
   margin-top: 20px;
-
+}
+.address-title {
+  
   color: var(--third-text-color);
   font-style: normal;
   font-size: 14px;
@@ -402,10 +414,14 @@ header {
 .address-title:focus {
   color: var(--accent-color);
 }
+.mail-list {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
 .address .link {
   display: inline-block;
-  padding-top: 9px;
-
+  
   color: var(--address-link-color);
   font-style: normal;
   font-size: 14px;
