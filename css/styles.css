@@ -10,6 +10,7 @@
   --logo-color: #000000;
 
   --bg-filter-button: #f5f4fa;
+  --icon-color: #AFB1B8;
 }
 /* утилиты */
 
@@ -293,6 +294,8 @@ header {
 .team-item {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-name {
@@ -305,11 +308,43 @@ header {
   text-align: center;
 }
 .team-position {
- 
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
+/*team-social-icon */
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-list {
+  border-radius: 50% 50%;
+  
+}
+.icon-list:hover {
+  background-color: var(--accent-color);
+  
+}
+.icon-link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  
+   color: var(--icon-color);
+
+}
+.icon-link:hover {
+  color: var(--third-text-color);
+
+}
+.instagram-icon {
+  fill:currentColor;
+ 
+   
+}
+
 
 /* portfolio */
 /* filter portfolio */
