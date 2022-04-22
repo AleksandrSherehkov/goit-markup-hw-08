@@ -139,14 +139,12 @@ header {
 }
 .mail-icon {
   margin-right: 10px;
-  width: 16px;
-  height:12px;
+  
 }
 
 .smartphone-icon {
   margin-right: 10px;
-  width: 10px;
-  height:16px;
+  
 }
 /* hero */
 .hero {
@@ -224,6 +222,16 @@ header {
 .features-list .item:not(:last-child) {
   margin-right: 30px;
 }
+.background-icon {
+  height: 120px;
+  background-color: var(--bg-filter-button);
+  margin-bottom: 30px; 
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+}
+
 .features-title {
   margin-bottom: 10px;
 
