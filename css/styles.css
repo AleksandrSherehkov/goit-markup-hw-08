@@ -139,17 +139,15 @@ header {
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  
 }
-.mail-icon {
+.mail-icon,.smartphone-icon {
   margin-right: 10px;
+  fill: currentColor;
   
 }
 
-.smartphone-icon {
-  margin-right: 10px;
-  
-}
+
 /* hero */
 .hero {
   padding-top: 200px;
@@ -250,9 +248,10 @@ header {
   line-height: 1.71;
 }
 
-/* activity and team */
+/* activity and team and clients */
 .activity-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -318,31 +317,57 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.icon-list {
-  border-radius: 50% 50%;
-  
-}
-.icon-list:hover {
-  background-color: var(--accent-color);
-  
-}
+
 .icon-link {
   display: block;
   padding: 12px;
   width: 44px;
   height: 44px;
-  
+  border-radius: 50% 50%;
    color: var(--icon-color);
 
 }
 .icon-link:hover {
   color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+.icon-link .icon {
+  fill:currentColor;
+    
+}
+/* regular clients */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
 
 }
-.instagram-icon {
-  fill:currentColor;
- 
-   
+
+/* .client-logo:hover {
+  border: 1px solid var(--accent-color);
+} */
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px; 
+  padding-bottom: 16px; 
+
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--icon-color);
+     
+}
+.clients-link:hover {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--accent-color);
+}
+.clients-link .icon {
+  fill: currentColor;
 }
 
 
@@ -426,6 +451,7 @@ header {
   font-size: 16px;
   line-height: 1.88;
 }
+
 /* footer */
 .logo-white {
   color: var(--third-text-color);
