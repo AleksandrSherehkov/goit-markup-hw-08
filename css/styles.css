@@ -316,6 +316,7 @@ header {
 .social-links {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .icon-link {
@@ -453,13 +454,18 @@ header {
 }
 
 /* footer */
-.logo-white {
-  color: var(--third-text-color);
-}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+}
+.logo-white {
+  color: var(--third-text-color);
+}
+.container.box {
+display: flex;
+
 }
 .address-list {
   margin-top: 20px;
@@ -491,4 +497,47 @@ header {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+/* join links */
+.join {
+  margin-bottom: 20px;
+
+  color: var(--third-text-color);
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/*team-social-icon */
+.join-box {
+  padding-left: 70px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+.join-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.join-list:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  color: var(--icon-color);
+  background-color: rgba(255, 255, 255, 0.1);;
+
+}
+
+.join-link:hover {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+
+.join-link .icon {
+  fill: currentColor;
+
 }
