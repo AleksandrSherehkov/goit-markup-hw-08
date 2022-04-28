@@ -471,6 +471,7 @@ header {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  
 
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -483,25 +484,28 @@ header {
 }
 .card-thumb {
   position: relative;
+  overflow: hidden;
+  
 }
 .portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 
-  background-color: var(--accent-color);
+  background-color: rgba(33, 150, 243, 0.9);
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 63px;
   padding-bottom: 63px;
 
-  opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .portfolio-link:hover .portfolio-overlay {
-  opacity: 1;
+  transform: translateY(0);
 }
 .overley_text {
   display: block;
