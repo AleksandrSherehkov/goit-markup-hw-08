@@ -123,9 +123,10 @@ header {
   display: flex;
   margin-left: auto;
 }
+
 .contact .item:not(:last-child) {
-  padding-right: 50px;
-}
+  margin-right: 50px;
+} 
 .contact .link {
   display: block;
   padding-top: 32px;
@@ -554,7 +555,7 @@ header {
 display: flex;
 
 }
-.address-list {
+.address {
   margin-top: 20px;
 }
 .address-title {
