@@ -10,7 +10,7 @@
   --logo-color: #000000;
 
   --bg-filter-button: #f5f4fa;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 }
 /* утилиты */
 
@@ -34,7 +34,6 @@ ul {
   padding: 0;
   margin: 0;
 }
-
 
 body {
   background-color: var(--third-text-color);
@@ -117,7 +116,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
@@ -127,13 +126,10 @@ header {
 
 .site-nav .link.current {
   color: var(--accent-color);
-  
 }
-.site-nav .link.current::after{
+.site-nav .link.current::after {
   opacity: 1;
-  
 }
-
 
 .site-nav .link::after {
   content: '';
@@ -149,9 +145,8 @@ header {
 
   border-radius: 2px;
   background-color: var(--accent-color);
-    
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* contact */
@@ -162,7 +157,7 @@ header {
 
 .contact .item:not(:last-child) {
   margin-right: 50px;
-} 
+}
 .contact .link {
   display: block;
   padding-top: 32px;
@@ -180,14 +175,12 @@ header {
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
-  
 }
-.mail-icon,.smartphone-icon {
+.mail-icon,
+.smartphone-icon {
   margin-right: 10px;
   fill: currentColor;
-  
 }
-
 
 /* hero */
 .hero {
@@ -206,7 +199,7 @@ header {
   background-position: center;
   text-align: center;
 }
-.hero-title {  
+.hero-title {
   margin-bottom: 30px;
   color: var(--third-text-color);
   font-weight: 900;
@@ -242,7 +235,6 @@ header {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
-  
 }
 /* features */
 
@@ -259,12 +251,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   height: 120px;
   background-color: var(--bg-filter-button);
-  margin-bottom: 30px; 
-  
-  
+  margin-bottom: 30px;
 }
 
 .features-title {
@@ -371,9 +361,7 @@ header {
 /*team-social-icon */
 .social-links {
   display: flex;
-  justify-content: space-between; 
-  
-  
+  justify-content: space-between;
 }
 
 .icon-link {
@@ -385,8 +373,8 @@ header {
   border-radius: 50% 50%;
   color: var(--icon-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -394,14 +382,12 @@ header {
   background-color: var(--accent-color);
 }
 .icon-link .icon {
-  fill:currentColor;
-    
+  fill: currentColor;
 }
 /* regular clients */
 .clients-list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .clients-link {
@@ -410,26 +396,21 @@ header {
   justify-content: center;
   width: 170px;
   height: 92px;
-  
 
-  
   box-sizing: border-box;
   border-radius: 4px;
   color: var(--icon-color);
   border: 1px solid currentColor;
 
- 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
 }
 .clients-link:hover,
 .clients-link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .clients-link .icon {
   fill: currentColor;
 }
-
 
 /* portfolio */
 /* filter portfolio */
@@ -444,7 +425,7 @@ header {
 
 .portfolio .filter {
   display: inline-block;
-  padding: 9px 22px 9px 22px;                  
+  padding: 9px 22px 9px 22px;
 
   color: var(--title-text-color);
   background-color: var(--bg-filter-button);
@@ -456,7 +437,9 @@ header {
   line-height: 1.62;
   text-align: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .filter:hover,
 .portfolio .filter:focus {
@@ -472,11 +455,9 @@ header {
   flex-wrap: wrap;
 }
 .portfolio-card {
-  
   width: calc((100% - 90px) / 3);
- /* flex-basis: calc((100% - 3 * 30px) / 3);  */
-/* flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
-  
+  /* flex-basis: calc((100% - 3 * 30px) / 3);  */
+  /* flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
 }
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -486,10 +467,9 @@ header {
 }
 
 .portfolio-link {
-  display: block;        
+  display: block;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .portfolio-link:hover,
@@ -502,21 +482,17 @@ header {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  
 
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-
 }
 .portfolio-link {
   display: block;
-  
 }
 .card-thumb {
   position: relative;
   overflow: hidden;
-  
 }
 .portfolio-overlay {
   position: absolute;
@@ -533,7 +509,6 @@ header {
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .portfolio-link:hover .portfolio-overlay {
   transform: translateY(0);
@@ -541,7 +516,6 @@ header {
 .overley_text {
   display: block;
 
-  
   color: var(--third-text-color);
 
   font-weight: 400;
@@ -549,12 +523,8 @@ header {
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-align: left;
-  
-  
-
 }
 .portfolio-title {
- 
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -562,7 +532,7 @@ header {
 }
 .portfolio-par {
   margin-top: 4px;
-  
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -579,14 +549,12 @@ header {
   color: var(--third-text-color);
 }
 .container.box {
-display: flex;
-
+  display: flex;
 }
 .address {
   margin-top: 20px;
 }
 .address-title {
-  
   color: var(--third-text-color);
   font-style: normal;
   font-size: 14px;
@@ -605,7 +573,7 @@ display: flex;
 
 .address .link {
   display: inline-block;
-  
+
   color: var(--address-link-color);
   font-style: normal;
   font-size: 14px;
@@ -645,14 +613,13 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
-   width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50% 50%;
   color: var(--third-text-color);
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .join-link:hover,
@@ -662,7 +629,6 @@ display: flex;
 
 .join-link .icon {
   fill: currentColor;
-
 }
 
 /* modal */
@@ -678,19 +644,18 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .modal {
   position: relative;
   min-height: 581px;
   min-width: 528px;
   transform: scale(1);
-  
+
   color: var(--logo-color);
   background-color: var(--third-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -720,15 +685,12 @@ display: flex;
   border-radius: 50% 50%;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .modal-close:hover,
 .modal-close:focus {
   color: var(--accent-color);
-
 }
 
 .modal-close .icon {
   fill: currentColor;
-
 }
