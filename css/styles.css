@@ -652,16 +652,21 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .modal {
-  position: relative;
+  /* /* position: relative;  for flex:  */
+  position: absolute;
   min-height: 581px;
   min-width: 528px;
-  transform: scale(1);
+  top: 50%;
+  left: 50%;
 
   color: var(--logo-color);
   background-color: var(--third-text-color);
@@ -669,16 +674,21 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: translate(-50%, -50%) scale(1);
+  /* transform: scale(1); */
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
+  
+
 }
 
-.is-hidden .modal {
-  transform: scale(0);
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
