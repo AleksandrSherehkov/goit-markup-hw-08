@@ -499,7 +499,7 @@ header {
   padding-right: 24px;
 
   border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;                                               
+  border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 .portfolio-link {
@@ -687,7 +687,6 @@ header {
   color: var(--address-link-color);
 }
 
-
 .email-button {
   display: inline-flex;
   justify-content: center;
@@ -709,10 +708,8 @@ header {
 }
 .email-button:hover,
 .email-button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
-
-
 
 .email-icon {
   fill: currentColor;
