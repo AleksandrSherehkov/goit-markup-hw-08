@@ -23,6 +23,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .cursor {
   cursor: pointer;
@@ -497,7 +499,7 @@ header {
   padding-right: 24px;
 
   border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;                                               
   border-right: 1px solid #eeeeee;
 }
 .portfolio-link {
@@ -526,7 +528,7 @@ header {
 .portfolio-link:hover .portfolio-overlay {
   transform: translateY(0);
 }
-.overley_text {
+.overley-text {
   display: block;
 
   color: var(--third-text-color);
@@ -641,6 +643,80 @@ header {
 
 .join-link .icon {
   fill: currentColor;
+}
+/* subscribe  */
+.email-form {
+  margin-left: auto;
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+.email-form p {
+  margin-bottom: 20px;
+}
+
+.input {
+  outline: none;
+  color: currentColor;
+  background-color: transparent;
+
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:hover,
+.input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.input::placeholder {
+  color: var(--address-link-color);
+}
+
+
+.email-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  margin-left: 12px;
+  font-weight: 700;
+  color: currentColor;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-button:hover,
+.email-button:focus {
+  background-color: #188CE8;
+}
+
+
+
+.email-icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 /* modal */
