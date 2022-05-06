@@ -501,7 +501,7 @@
         <!-- subscribe -->
         <form class="email-form" autocomplete="on" validate>
           <p id="email-input">Подпишитесь на рассылку</p>
-          <input type="email" name="email" class="input" placeholder="E-mail" />
+          <input type="email" name="email" class="email-input" placeholder="E-mail" />
           <button type="submit" class="email-button">
             Подписаться
             <svg class="email-icon" height="24" width="24">
@@ -521,6 +521,50 @@
             <use href="./img/icon.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <!-- form -->
+        <form class="call-back-form" name="call_back_form" autocomplete="on" validate>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <ul class="form-wrapper">
+            <li class="form-list list">
+              <label class="label-form">
+                Имя
+                <input class="input" type="text" name="name" />
+              </label>
+            </li>
+            <li class="form-list list">
+              <label class="label-form">
+                Телефон
+                <input class="input" type="tel" name="tel" />
+              </label>
+            </li>
+            <li class="form-list list">
+              <label class="label-form">
+                Почта
+                <input class="input" type="email" name="email" />
+              </label>
+            </li>
+            <li class="form-list list">
+              <label class="label-form">
+                Комментарий
+                <textarea
+                  class="textarea"
+                  name="coment"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </li>
+            <li class="form-list list">
+              <label class="label-form">
+                <input type="checkbox" name="checkbox" value="accept the condition" />
+                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+
+                <a class="form-link link" href="">Условия договора</a></label
+              >
+            </li>
+          </ul>
+          <button class="form-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
