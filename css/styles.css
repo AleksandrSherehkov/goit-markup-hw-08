@@ -805,6 +805,7 @@ header {
   color: var(--title-text-color);
 }
 .form-wrapper {
+  margin-bottom: -10px;
 }
 
 .form-list {
@@ -822,9 +823,13 @@ header {
 
   color: var(--primary-text-color);
 }
+
+.form-fild {
+  position: relative;
+  margin-top: 4px;
+}
 .input {
   display: block;
-  margin-top: 4px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
@@ -837,6 +842,18 @@ header {
   font-size: 14px;
   line-height: 0.14;
   letter-spacing: 0.01em;
+}
+.form-wrapper .input:hover,
+.form-wrapper .input:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.form-list .icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: var(--title-text-color);
 }
 
 .textarea {
@@ -875,7 +892,9 @@ header {
   color: var(--accent-color);
   text-decoration: underline;
 }
-
+.form-list.coment {
+  margin-bottom: 20px;
+}
 .form-button {
   display: block;
   padding-top: 10px;
