@@ -561,16 +561,30 @@
             <div class="form-list coment">
               <label class="label-form">
                 Комментарий
-                <textarea class="textarea" name="coment" rows="10" placeholder="Введите текст">
+                <textarea
+                  class="input textarea"
+                  name="coment"
+                  rows="10"
+                  placeholder="Введите текст"
+                >
                 </textarea>
               </label>
             </div>
             <div class="form-list">
-              <label class="label-form">
-                <input type="checkbox" name="checkbox" value="accept the condition" />
-                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
-
-                <a class="form-link link" href="">Условия договора</a>
+              <label class="label-form check">
+                <input
+                  class="checkbox visually-hedden"
+                  type="checkbox"
+                  name="checkbox"
+                  value="accept the condition"
+                />
+                <svg class="icon-check" width="16" height="15">
+                  <use href="./img/icon.svg#icon-check"></use>
+                </svg>
+                <span class="checkbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="form-link link" href="">Условия договора</a>
+                </span>
               </label>
             </div>
           </div>
