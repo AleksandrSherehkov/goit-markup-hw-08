@@ -824,6 +824,7 @@ header {
 
 .form-fild {
   position: relative;
+  display: block;
   margin-top: 4px;
 }
 .input {
