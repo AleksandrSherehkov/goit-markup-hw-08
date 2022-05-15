@@ -21,7 +21,7 @@
     <!-- heder -->
     <header class="header">
       <div class="container header__container">
-        <!-- navigation -->
+        <!-- logo -->
         <a href="./index.html" class="logo heder__logo--blue"
           >Web<span class="heder__logo--black">Studio</span></a
         >
@@ -63,57 +63,54 @@
     <main>
       <!-- hero -->
       <section class="section hero">
-        <h1 class="hero__title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" data-modal-open class="button hero-__button">Заказать услугу</button>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" data-modal-open class="hero__button">Заказать услугу</button>
       </section>
       <!-- features -->
       <section class="section features">
         <div class="container features__container">
-          <h2 class="features__title visually-hidden">Наши критерии</h2>
-          <ul class="features__list">
-            <li class="features__item">
+          <h2 class="features__title">Наши критерии</h2>
+          <ul class="features__list card-set">
+            <li class="features__item card-item">
               <div class="features__wrapper">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./img/icon.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Внимание к деталям</h3>
+              <h3 class="features__name">Внимание к деталям</h3>
               <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features__item">
+            <li class="features__item card-item">
               <div class="features__wrapper">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./img/icon.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальность</h3>
+              <h3 class="features__name">Пунктуальность</h3>
               <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features__item">
+            <li class="features__item card-item">
               <div class="features__wrapper">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./img/icon.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планирование</h3>
+              <h3 class="features__name">Планирование</h3>
               <p class="features__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features__item">
+            <li class="features__item card-item">
               <div class="features__wrapper">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./img/icon.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Современные технологии</h3>
+              <h3 class="features__name">Современные технологии</h3>
               <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
@@ -125,16 +122,16 @@
       <section class="section activity">
         <div class="container activity__container">
           <h2 class="activity__title">Чем мы занимаемся</h2>
-          <ul class="activity__list">
-            <li class="activity__item">
+          <ul class="activity__list card-set">
+            <li class="activity__item card-item">
               <img src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
               <p class="activity__overlay">Десктопные приложения</p>
             </li>
-            <li class="activity__item">
+            <li class="activity__item card-item">
               <img src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
               <p class="activity__overlay">Мобильные приложения</p>
             </li>
-            <li class="activity__item">
+            <li class="activity__item card-item">
               <img src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
               <p class="activity__overlay">Дизайнерские решения</p>
             </li>
@@ -146,8 +143,8 @@
       <section class="section team">
         <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
-          <ul class="team__list">
-            <li class="team__card">
+          <ul class="team__list card-set">
+            <li class="team__card card-item">
               <img
                 src="./img/productdesigner.jpg"
                 alt="Игорь Демьяненко"
@@ -158,7 +155,7 @@
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="network team__network">
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
@@ -170,7 +167,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://twitter.com/"
                       target="_blank"
@@ -182,7 +179,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.facebook.com/"
                       target="_blank"
@@ -194,7 +191,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.linkedin.com/"
                       target="_blank"
@@ -209,13 +206,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card">
+            <li class="team__card card-item">
               <img src="./img/frontenddeveloper.jpg" alt="Ольга Репина" width="270" height="260" />
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
                 <ul class="network team__network">
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
@@ -227,7 +224,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://twitter.com/"
                       target="_blank"
@@ -239,7 +236,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.facebook.com/"
                       target="_blank"
@@ -251,7 +248,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.linkedin.com/"
                       target="_blank"
@@ -266,13 +263,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card">
+            <li class="team__card card-item">
               <img src="./img/marketing.jpg" alt="Николай Тарасов" width="270" height="260" />
               <div class="team__wrapper">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
                 <ul class="network team__network">
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
@@ -284,7 +281,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://twitter.com/"
                       target="_blank"
@@ -296,7 +293,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.facebook.com/"
                       target="_blank"
@@ -308,7 +305,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.linkedin.com/"
                       target="_blank"
@@ -323,13 +320,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card">
+            <li class="team__card card-item">
               <img src="./img/uidesigner.jpg" alt="Михаил Ермаков" width="270" height="260" />
               <div class="team__wrapper">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="network team__network">
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.instagram.com/"
                       target="_blank"
@@ -341,7 +338,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://twitter.com/"
                       target="_blank"
@@ -353,7 +350,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.facebook.com/"
                       target="_blank"
@@ -365,7 +362,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="network__list">
+                  <li class="network__item">
                     <a
                       href="https://www.linkedin.com/"
                       target="_blank"
@@ -388,43 +385,43 @@
       <section class="section clients">
         <div class="container clients__container">
           <h2 class="clients__title">Постоянные клиенты</h2>
-          <ul class="clients__list">
-            <li class="clients__logo">
+          <ul class="clients__list card-set">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__logo">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__logo">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__logo">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__logo">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
-            <li class="client__logo">
+            <li class="clients__logo card-item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./img/icon.svg#icon-logo6"></use>
@@ -439,26 +436,28 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrapaddress">
-          <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
+          <a href="./index.html" class="logo footer__logo--blue"
+            >Web<span class="footer__logo--white">Studio</span></a
+          >
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
-                <a href="" class="address-title">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="address__title">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="contact__link">info@example.com</a>
+                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="contact__link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <!-- join links -->
         <div class="footer__wrapnetwork">
-          <h2 class="footer__title">Присоединяйтесь</h2>
+          <h2 class="network__title">Присоединяйтесь</h2>
           <ul class="network footer__network">
-            <li class="network__list">
+            <li class="network__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
@@ -470,7 +469,7 @@
                 </svg>
               </a>
             </li>
-            <li class="network__list">
+            <li class="network__item">
               <a
                 href="https://twitter.com/"
                 target="_blank"
@@ -482,7 +481,7 @@
                 </svg>
               </a>
             </li>
-            <li class="network__list">
+            <li class="network__item">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -494,7 +493,7 @@
                 </svg>
               </a>
             </li>
-            <li class="network__list">
+            <li class="network__item">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
@@ -509,10 +508,10 @@
           </ul>
         </div>
         <!-- subscribe -->
-        <form class="subscription__footer subscription" autocomplete="on" validate>
-          <p id="subscription__title">Подпишитесь на рассылку</p>
+        <form class="footer__subscription subscription" autocomplete="on" validate>
+          <p id="subscription__title" class="subscription__title">Подпишитесь на рассылку</p>
           <input type="email" name="email" class="subscription__input" placeholder="E-mail" />
-          <button type="submit" class="button subscription__button">
+          <button type="submit" class="subscription__button">
             Подписаться
             <svg class="subscription__icon" height="24" width="24">
               <use href="./img/icon.svg#icon-send"></use>
@@ -532,10 +531,10 @@
           </svg>
         </button>
         <!-- form -->
-        <form class="form modal__form" name="call_back_form" autocomplete="on" validate>
+        <form class="form" name="call_back_form" autocomplete="on" validate>
           <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form__wrapper">
-            <div class="for__item">
+            <div class="form__item">
               <label class="form__label">
                 Имя
                 <span class="form__fild">
@@ -580,9 +579,9 @@
               </label>
             </div>
             <div class="form__check">
-              <label class="form__label">
+              <label class="form__label--flex">
                 <input
-                  class="form__checkbox visually-hedden"
+                  class="form__checkbox"
                   type="checkbox"
                   name="checkbox"
                   value="accept the condition"
