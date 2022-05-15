@@ -1,0 +1,29 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-left: 93px;
+  }
+
+  &__contact {
+    margin-left: auto;
+  }
+}
+
+.heder {
+  &__logo {
+    &--blue {
+      color: var(--accent-color);
+    }
+
+    &--black {
+      color: var(--logo-color);
+    }
+  }
+}

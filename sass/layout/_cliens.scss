@@ -1,0 +1,36 @@
+.clients {
+  &__title {
+    @extend %section-headings;
+  }
+
+  &__list {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    --card-item: 6;
+    --card-colum: 5;
+  }
+
+  &__link {
+    @extend %icon;
+    width: 170px;
+    height: 92px;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--icon-color);
+    border: 1px solid currentColor;
+
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
