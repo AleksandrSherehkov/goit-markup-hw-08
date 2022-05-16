@@ -1,0 +1,14 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include mq(mob) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mq(desk) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
