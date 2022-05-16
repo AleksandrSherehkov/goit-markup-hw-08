@@ -7,6 +7,8 @@
 
   &__list {
     justify-content: space-around;
+    --card-item: 4;
+    --card-colum: 3;
   }
 
   &__card {

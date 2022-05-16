@@ -619,6 +619,11 @@ body {
   background-color: #188ce8;
 }
 
+.features__list {
+  --card-item: 4;
+  --card-colum: 3;
+}
+
 .features__wrapper {
   height: 120px;
   background-color: var(--bg-filter-button);
@@ -677,6 +682,8 @@ body {
 
 .team__list {
   justify-content: space-around;
+  --card-item: 4;
+  --card-colum: 3;
 }
 
 .team__card {

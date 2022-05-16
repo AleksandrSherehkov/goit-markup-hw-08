@@ -2,7 +2,10 @@
   &__title {
     @extend %visually-hedden;
   }
-
+  &__list {
+    --card-item: 4;
+    --card-colum: 3;
+  }
   &__wrapper {
     @extend %icon;
     height: 120px;
