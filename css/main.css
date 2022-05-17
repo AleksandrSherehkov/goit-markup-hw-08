@@ -629,41 +629,84 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 480px;
+  /* max-width: 1600px; */
   min-height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-bghero1x.png);
-  background-size: 480px 400px;
-  /* background: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/bghero.jpg);
+  background: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-bghero1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center; */
+  text-align: center;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .box {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-bghero1x.png);
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob-bghero2x.jpg);
+  }
+}
+
+@media (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tab-bghero1x.jpg);
+  }
+}
+
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tab-bghero2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desk-bghero1x.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desk-bghero2x.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
   }
 }
 
 .hero__title {
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: calc(26px + 18 * ((100vw - 480px) / 720));
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    width: 360;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+  }
 }
 
 .hero .hero__button {
@@ -672,7 +715,7 @@ body {
   align-items: center;
   min-width: 200px;
   min-height: 50px;
-  padding: 10px 32px;
+  padding: 10px 15px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
