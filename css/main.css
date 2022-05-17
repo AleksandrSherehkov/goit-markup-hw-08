@@ -906,6 +906,16 @@ body {
   }
 }
 
+.clients__logo:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .clients__logo:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .clients__link {
   width: 210px;
   height: 92px;

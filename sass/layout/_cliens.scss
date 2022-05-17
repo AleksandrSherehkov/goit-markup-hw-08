@@ -26,7 +26,12 @@
       --card-colum: 5;
     }
   }
-
+  &__logo:not(:last-child) {
+    margin-bottom: 15px;
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+  }
   &__link {
     @extend %icon;
     width: 210px;
