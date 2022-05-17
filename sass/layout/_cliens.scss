@@ -1,23 +1,46 @@
 .clients {
   &__title {
     @extend %section-headings;
+    @include mq(desk) {
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
-    justify-content: space-between;
-  }
+    display: block;
+    @include mq(mob) {
+      display: flex;
+      --card-item: 2;
+      --card-colum: 1;
+    }
 
-  &__logo {
-    --card-item: 6;
-    --card-colum: 5;
+    @include mq(tab) {
+      display: flex;
+      --card-item: 4;
+      --card-colum: 3;
+    }
+    @include mq(desk) {
+      display: flex;
+      justify-content: space-between;
+      --card-item: 6;
+      --card-colum: 5;
+    }
   }
-
+ 
   &__link {
     @extend %icon;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
-    box-sizing: border-box;
+    @include mq(tab) {
+      width: 226px;
+      height: 92px;
+    }
+    @include mq(desk) {
+      width: 170px;
+      height: 92px;
+    }
+
     border-radius: 4px;
     color: var(--icon-color);
     border: 1px solid currentColor;

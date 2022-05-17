@@ -1,18 +1,23 @@
 .activity {
-  padding-top: 0px;
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+    padding-top: 0px;
+  }
+
   &__title {
     @extend %section-headings;
   }
 
   &__list {
     justify-content: space-around;
+    --card-item: 3;
+    --card-colum: 2;
   }
 
   &__item {
     position: relative;
-
-    --card-item: 3;
-    --card-colum: 2;
   }
 
   &__overlay {

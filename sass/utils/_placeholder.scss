@@ -16,10 +16,10 @@
 }
 
 %section-headings {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
-  line-height: 1.16;
+  @include adaptiv-font(36, 28);
+  line-height: 1.172;
   text-align: center;
   color: var(--title-text-color);
 }

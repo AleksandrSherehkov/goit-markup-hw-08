@@ -58,9 +58,9 @@ button {
 }
 
 .activity__title, .team__title, .clients__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
+  margin-bottom: 30px;
+  font-size: calc(28px + 8 * ((100vw - 480px) / 720));
+  line-height: 1.172;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -709,17 +709,24 @@ body {
 }
 
 .activity {
-  padding-top: 0px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .activity {
+    display: block;
+    padding-top: 0px;
+  }
 }
 
 .activity__list {
   justify-content: space-around;
+  --card-item: 3;
+  --card-colum: 2;
 }
 
 .activity__item {
   position: relative;
-  --card-item: 3;
-  --card-colum: 2;
 }
 
 .activity__overlay {
@@ -744,10 +751,40 @@ body {
   background-color: #f5f4fa;
 }
 
+@media (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
+}
+
 .team__list {
-  justify-content: space-around;
-  --card-item: 4;
-  --card-colum: 3;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .team__list {
+    display: flex;
+    justify-content: space-around;
+    --card-item: 2;
+    --card-colum: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__list {
+    --card-item: 4;
+    --card-colum: 3;
+  }
+}
+
+.team__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .team__card {
@@ -756,8 +793,40 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__img {
+  width: 450px;
+  height: 460px;
+}
+
+@media (min-width: 768px) {
+  .team__img {
+    display: flex;
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team__wrapper {
-  padding: 30px 32px;
+  padding: 30px 112px 34px 112px;
+}
+
+@media (min-width: 768px) {
+  .team__wrapper {
+    padding: 30px 74px 34px 74px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .team__wrapper {
+    padding: 30px 32px;
+  }
 }
 
 .team__name {
@@ -802,23 +871,62 @@ body {
   fill: currentColor;
 }
 
-.clients__list {
-  justify-content: space-between;
+@media (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
-.clients__logo {
-  --card-item: 6;
-  --card-colum: 5;
+.clients__list {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  .clients__list {
+    display: flex;
+    --card-item: 2;
+    --card-colum: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients__list {
+    display: flex;
+    --card-item: 4;
+    --card-colum: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients__list {
+    display: flex;
+    justify-content: space-between;
+    --card-item: 6;
+    --card-colum: 5;
+  }
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
-  box-sizing: border-box;
   border-radius: 4px;
   color: var(--icon-color);
   border: 1px solid currentColor;
   transition: color var(--transition);
+}
+
+@media (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {
