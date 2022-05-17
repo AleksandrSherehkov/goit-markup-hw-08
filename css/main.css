@@ -913,6 +913,15 @@ body {
   }
 }
 
+.clients__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__logo:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .clients__link {
   width: 210px;
   height: 92px;

@@ -8,6 +8,7 @@
 
   &__list {
     display: block;
+
     @include mq(mob) {
       display: flex;
       --card-item: 2;
@@ -24,6 +25,14 @@
       justify-content: space-between;
       --card-item: 6;
       --card-colum: 5;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
   }
 
