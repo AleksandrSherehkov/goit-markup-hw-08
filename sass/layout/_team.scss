@@ -49,11 +49,14 @@
     }
   }
   &__wrapper {
-    padding: 30px 122px 24px 122px;
+    padding: 10px 0px 10px 0px;
+    @include mq(mob) {
+      padding: 30px 0 24px 0;
+    }
     @include mq(tab) {
-      padding: 30px 74px 24px 74px;
+      padding: 30px 0 24px 0;
       @include mq(desk) {
-        padding: 30px 32px;
+        padding: 30 0 32px 0;
       }
     }
   }
@@ -77,7 +80,8 @@
 
   .network {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 10px;
 
     &__link {
       @include social-link(var(--icon-color), var(--third-text-color));

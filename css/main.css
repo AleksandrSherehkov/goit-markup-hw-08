@@ -814,18 +814,24 @@ body {
 }
 
 .team__wrapper {
-  padding: 30px 122px 24px 122px;
+  padding: 10px 0px 10px 0px;
+}
+
+@media (min-width: 480px) {
+  .team__wrapper {
+    padding: 30px 0 24px 0;
+  }
 }
 
 @media (min-width: 768px) {
   .team__wrapper {
-    padding: 30px 74px 24px 74px;
+    padding: 30px 0 24px 0;
   }
 }
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .team__wrapper {
-    padding: 30px 32px;
+    padding: 30 0 32px 0;
   }
 }
 
@@ -847,7 +853,8 @@ body {
 
 .team .network {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .team .network__link {
@@ -903,16 +910,6 @@ body {
     justify-content: space-between;
     --card-item: 6;
     --card-colum: 5;
-  }
-}
-
-.clients__logo:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-@media (min-width: 768px) {
-  .clients__logo:not(:last-child) {
-    margin-bottom: 0;
   }
 }
 
