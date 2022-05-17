@@ -1,6 +1,10 @@
 .address {
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include mq(desk) {
+      margin-bottom: 9px;
+    }
   }
 
   &__title {

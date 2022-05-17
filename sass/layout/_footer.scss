@@ -5,13 +5,39 @@
 
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+
+    @include mq(desk) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+  &__deskwrap {
+    @include mq(tab) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+    @include mq(tab-only) {
+      margin-bottom: 60px;
+    }
+  }
+  &__wrapaddress {
+    margin-bottom: 60px;
+
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
   }
 
   &__logo {
     &--blue {
+      text-align: center;
       color: var(--accent-color);
       margin-bottom: 20px;
+      @include mq(desk) {
+        text-align: start;
+      }
     }
 
     &--white {
@@ -20,23 +46,54 @@
   }
 
   &__wrapnetwork {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+    @include mq(desk) {
+      margin-left: 70px;
+    }
   }
 
   &__network {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 10px;
+    @include mq(desk) {
+      justify-content: space-between;
+      column-gap: 10px;
+    }
   }
 
   &__subscription {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq(desk) {
+      display: block;
+      margin-left: auto;
+    }
   }
 }
+.address {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    @include mq(desk) {
+      display: block;
+    }
+  }
+}
 .network {
   &__title {
     margin-bottom: 20px;
+    text-align: center;
+    @include mq(desk) {
+      text-align: start;
+    }
 
     color: var(--third-text-color);
     font-family: 'Roboto';

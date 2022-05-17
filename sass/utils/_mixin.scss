@@ -1,5 +1,5 @@
 @mixin button($padding) {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 200px;
