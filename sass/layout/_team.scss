@@ -37,21 +37,21 @@
   }
   &__img {
     width: 450px;
-    height: 460px;
+    height: auto;
     @include mq(tab) {
       display: flex;
       width: 354px;
-      height: 374px;
+      height: auto;
     }
     @include mq(desk) {
       width: 270px;
-      height: 260px;
+      height: auto;
     }
   }
   &__wrapper {
-    padding: 30px 112px 34px 112px;
+    padding: 30px 122px 24px 122px;
     @include mq(tab) {
-      padding: 30px 74px 34px 74px;
+      padding: 30px 74px 24px 74px;
       @include mq(desk) {
         padding: 30px 32px;
       }

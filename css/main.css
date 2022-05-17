@@ -795,31 +795,31 @@ body {
 
 .team__img {
   width: 450px;
-  height: 460px;
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .team__img {
     display: flex;
     width: 354px;
-    height: 374px;
+    height: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .team__img {
     width: 270px;
-    height: 260px;
+    height: auto;
   }
 }
 
 .team__wrapper {
-  padding: 30px 112px 34px 112px;
+  padding: 30px 122px 24px 122px;
 }
 
 @media (min-width: 768px) {
   .team__wrapper {
-    padding: 30px 74px 34px 74px;
+    padding: 30px 74px 24px 74px;
   }
 }
 
