@@ -34,7 +34,6 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   top: 0;
   left: 0;
@@ -54,12 +53,13 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 10px;
   color: #fff;
 }
 
 .mobile {
+  margin-bottom: auto;
   &__link {
     font-family: 'Roboto';
     font-style: normal;
@@ -117,13 +117,13 @@
 .mobile {
   &__network {
     display: flex;
-    justify-content: space-between;
 
     &__linenetwork {
       display: block;
+
       background-color: rgba(33, 33, 33, 0.2);
-      width: 22px;
-      height: 30px;
+      width: 10px;
+      height: 1px;
       transform: rotate(90deg);
     }
   }
@@ -136,6 +136,8 @@
   }
 
   &__link {
+    padding-right: 10px;
+    padding-left: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -146,4 +148,7 @@
 
     color: #2196f3;
   }
+}
+.mobile__contact {
+  margin-bottom: 64px;
 }
