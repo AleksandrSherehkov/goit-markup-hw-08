@@ -19,13 +19,12 @@
   </head>
   <body>
     <!-- heder-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
-        <!-- navigation -->
         <a href="./index.html" class="logo heder__logo--blue"
           >Web<span class="heder__logo--black">Studio</span></a
         >
-        <!-- navigation -->
+
         <nav class="nav header__nav">
           <ul class="nav__menu">
             <li class="nav__item">
@@ -39,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <!-- contact -->
+
         <ul class="contact header__contact">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
@@ -59,7 +58,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- portfolio -->
       <section class="section portfolio">
@@ -88,13 +87,58 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project1.jpg"
-                    alt="Технокряк сайт"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro1-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro1-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro1-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro1-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro1-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro1-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro1-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro1-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro1-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro1-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro1-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro1-1x.jpg " alt="project1" />
+                  </picture>
+
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -112,12 +156,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project2.jpg"
-                    alt="Баскетболисты New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro2-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro2-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro2-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro2-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro2-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro2-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro2-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro2-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro2-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro2-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro2-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro2-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -135,13 +224,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro3-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro3-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro3-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro3-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro3-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro3-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro3-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro3-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro3-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro3-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro3-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro3-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -159,13 +292,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro4-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro4-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro4-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro4-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro4-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro4-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro4-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro4-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro4-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro4-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro4-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro4-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -183,13 +360,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro5-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro5-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro5-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro5-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro5-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro5-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro5-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro5-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro5-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro5-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro5-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro5-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -207,13 +428,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project6.jpg"
-                    alt="Монитор с сайтом"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro6-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro6-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro6-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro6-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro6-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro6-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro6-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro6-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro6-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro6-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro6-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro6-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -231,13 +496,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project7.jpg"
-                    alt="Книга с картинками"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro7-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro7-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro7-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro7-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro7-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro7-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro7-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro7-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro7-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro7-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro7-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro7-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -255,13 +564,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project8.jpg"
-                    alt="Рекламная бирка"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro8-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro8-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro8-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro8-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro8-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro8-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro8-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro8-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro8-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro8-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro8-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro8-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -279,13 +632,57 @@
             <li class="presentation__card card-item">
               <a href="" class="presentation__link">
                 <div class="presentation__thumb">
-                  <img
-                    src="./img/project9.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                    class="presentation__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro9-1x.webp 1x
+                        ./img/adaptive/portfolio/desk/desk-pro9-2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/desk/desk-pro9-1x.jpg 1x,
+                        ./img/adaptive/portfolio/desk/desk-pro9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro9-1x.webp 1x
+                        ./img/adaptive/portfolio/tab/tab-pro9-2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/tab/tab-pro9-1x.jpg 1x,
+                        ./img/adaptive/portfolio/tab/tab-pro9-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro9-1x.webp 1x
+                        ./img/adaptive/portfolio/mob/mob-pro9-2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/adaptive/portfolio/mob/mob-pro9-1x.jpg 1x,
+                        ./img/adaptive/portfolio/mob/mob-pro9-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img src="./img/adaptive/portfolio/mob/mob-pro9-1x.jpg " alt="project1" />
+                  </picture>
                   <div class="presentation__overlay">
                     <p class="presentation__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -307,79 +704,80 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrapaddress">
-          <a href="./index.html" class="logo footer__logo--blue"
-            >Web<span class="footer__logo--white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a href="" class="address__title">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="footer__deskwrap">
+          <div class="footer__wrapaddress">
+            <a href="./index.html" class="logo footer__logo--blue"
+              >Web<span class="footer__logo--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a href="" class="address__title">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__wrapnetwork">
+            <h2 class="network__title">Присоединяйтесь</h2>
+            <ul class="network footer__network">
+              <li class="network__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="network__link"
+                >
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+              <li class="network__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="network__link"
+                >
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+              <li class="network__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="network__link"
+                >
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="network__link"
+                >
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-- join links -->
-        <div class="footer__wrapnetwork">
-          <h2 class="network__title">Присоединяйтесь</h2>
-          <ul class="network footer__network">
-            <li class="network__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="network__link"
-              >
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="network__link"
-              >
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network__item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="network__link"
-              >
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network__item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="network__link"
-              >
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- subscribe -->
         <form class="footer__subscription subscription" autocomplete="on" validate>
           <p id="subscription__title" class="subscription__title">Подпишитесь на рассылку</p>
           <input type="email" name="email" class="subscription__input" placeholder="E-mail" />

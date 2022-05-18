@@ -1,7 +1,17 @@
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
   column-gap: 8px;
+  row-gap: 15px;
+
+  @include mq(tab) {
+    justify-content: center;
+  }
+
+  @include mq(desk) {
+    row-gap: 0;
+  }
 
   &__button {
     display: inline-block;

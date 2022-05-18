@@ -6,11 +6,14 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.172;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--title-text-color);
+    @include mq(no-desk) {
+      line-height: 1.5;
+    }
   }
 
   &__wrapper {
@@ -91,7 +94,7 @@
     padding-left: 16px;
     overflow: hidden;
 
-    font-size: 14px;
+    @include adaptiv-font(12, 14);
     line-height: 1.14;
     letter-spacing: 0.01em;
 
@@ -142,7 +145,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    @include adaptiv-font(14, 12);
     line-height: 1.71;
     letter-spacing: 0.03em;
 
@@ -150,6 +153,12 @@
   }
 
   &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    @include adaptiv-font(14, 12);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: underline;
   }
