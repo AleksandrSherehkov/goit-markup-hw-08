@@ -17,9 +17,16 @@
 
 %section-headings {
   margin-bottom: 30px;
+  @include mq(mob) {
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  @include mq(desk) {
+    font-size: 36px;
+    line-height: 1.172;
 
-  @include adaptiv-font(36, 28);
-  line-height: 1.172;
-  text-align: center;
-  color: var(--title-text-color);
+    color: var(--title-text-color);
+  }
 }

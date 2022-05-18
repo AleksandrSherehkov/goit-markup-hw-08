@@ -57,24 +57,27 @@
   &__title {
     margin-left: auto;
     margin-right: auto;
-
+    font-weight: 900;
     margin-bottom: 30px;
     @include mq(mob) {
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      text-align: center;
     }
     @include mq(tab) {
       width: 360;
     }
     @include mq(desk) {
       width: 696px;
-    }
 
-    font-weight: 900;
-    @include adaptiv-font(44, 26);
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--third-text-color);
+      font-size: 44px;
+      /* @include adaptiv-font(44, 26); */
+      line-height: 1.36;
+
+      text-transform: uppercase;
+      color: var(--third-text-color);
+    }
   }
 
   .hero {

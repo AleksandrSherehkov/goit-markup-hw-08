@@ -9,9 +9,14 @@
 
     font-style: normal;
     font-weight: 500;
-    @include adaptiv-font(14, 12);
-    line-height: 1.14;
+    /* @include adaptiv-font(14, 12); */
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
 
     color: var(--primary-text-color);
 
