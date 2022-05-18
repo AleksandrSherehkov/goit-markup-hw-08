@@ -1426,6 +1426,7 @@ body {
 
 @media (min-width: 768px) {
   .presentation__card {
+    display: flex;
     --card-item: 2;
     --card-colum: 1;
   }
@@ -1441,6 +1442,13 @@ body {
 .presentation__link {
   display: block;
   transition: box-shadow var(--transition);
+}
+
+@media (min-width: 768px) {
+  .presentation__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .presentation__link:hover, .presentation__link:focus {
@@ -1489,6 +1497,12 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media (min-width: 768px) {
+  .presentation__border {
+    flex-grow: 1;
+  }
 }
 
 .presentation__title {

@@ -32,6 +32,7 @@
     display: block;
 
     @include mq(tab) {
+      display: flex;
       --card-item: 2;
       --card-colum: 1;
     }
@@ -43,6 +44,10 @@
 
   &__link {
     display: block;
+    @include mq(tab) {
+      display: flex;
+      flex-direction: column;
+    }
 
     transition: box-shadow var(--transition);
 
@@ -92,6 +97,9 @@
   }
 
   &__border {
+    @include mq(tab) {
+      flex-grow: 1;
+    }
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
