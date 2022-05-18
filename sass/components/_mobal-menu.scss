@@ -1,10 +1,3 @@
-.page-header .container {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -27,19 +20,28 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.mobile__icon {
+  fill: #212121;
+
+  transition: fill var(--transition);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 48px 40px;
+  background-color: #ffffff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -57,15 +59,91 @@
   color: #fff;
 }
 
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.mobile {
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.75;
+
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--current {
+      color: var(--accent-color);
+    }
+  }
+}
+.tel {
+  &__item {
+    margin-bottom: 32px;
+  }
+}
+.mailcontact {
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+.telcontact {
+  &__link {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.177;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}
+
+.mobile {
+  &__network {
+    display: flex;
+    justify-content: space-between;
+
+    &__linenetwork {
+      display: block;
+      background-color: rgba(33, 33, 33, 0.2);
+      width: 22px;
+      height: 30px;
+      transform: rotate(90deg);
+    }
+  }
+}
+.mobnetwork {
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
 }
